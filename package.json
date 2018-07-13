@@ -24,6 +24,7 @@
   "homepage": "https://github.com/daonomic/trezor-web3-provider#readme",
   "dependencies": {
     "@daonomic/trezor-wallet-provider": "supernothing/trezor-wallet-provider#dev",
-    "web3": "0.20.6"
+    "web3": "0.20.6",
+    "web3-provider-engine": "14.0.5"
   }
 }
