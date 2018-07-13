@@ -1,7 +1,7 @@
 var TrezorProvider = require("@daonomic/trezor-wallet-provider");
 var ProviderEngine = require("web3-provider-engine");
 var FiltersSubprovider = require('web3-provider-engine/subproviders/filters.js');
-var Web3Subprovider = require("web3-provider-engine/subproviders/web3.js");
+var Web3Subprovider = require("web3-provider-engine/subproviders/provider.js");
 var Web3 = require("web3");
 
 module.exports = function(url, path) {
