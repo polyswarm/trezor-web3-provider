@@ -45,3 +45,14 @@ module.exports = {
   }
 }
 ```
+
+## Environment
+This provider was tested successfully on Ubuntu 16.04 with the following software:
+
+- Truffle v4.1.13 (core: 4.1.13)
+- Solidity v0.4.24 (solc-js)
+- NodeJS v9.11.2
+- OpenJDK 1.8.0.191
+- Trezor One rev 1
+- Trezor FW 1.7.1 
+- Trezor Bridge 2.0.25
