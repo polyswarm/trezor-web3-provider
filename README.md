@@ -27,4 +27,32 @@ Parameters:
 
 ## Truffle Usage
 
-You can easily use this within a Truffle configuration
+You can use this in Truffle by modifying your config as shown:
+
+```
+var TrezorWeb3Provider = require("@daonomic/trezor-web3-provider);
+
+module.exports = {
+  networks: {
+    rinkeby: {
+      network_id: '4',
+      provider: function() { return new TrezorWeb3Provider("https://rinkeby.infura.io/[YOUR_API_KEY]", "m/44'/1'/0'/0/0") },
+    },
+    mainnet: {
+      network_id: '1',
+      provider: function() { return new TrezorWeb3Provider("https://mainnet.infura.io/[YOUR_API_KEY]", "m/44'/60'/0'/0") },
+    },
+  }
+}
+```
+
+## Environment
+This provider was tested successfully on Ubuntu 16.04 with the following software:
+
+- Truffle v4.1.13 (core: 4.1.13)
+- Solidity v0.4.24 (solc-js)
+- NodeJS v9.11.2
+- OpenJDK 1.8.0.191
+- Trezor One rev 1
+- Trezor FW 1.7.1 
+- Trezor Bridge 2.0.25
